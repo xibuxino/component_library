@@ -1,4 +1,8 @@
 import styles from './Card.module.scss';
 export const CardText = ({ text }) => {
-	return <p className={styles.cardtext}>{text}</p>;
+	return (
+		<div className={styles.cardtext}>
+			<p>{text}</p>
+		</div>
+	);
 };

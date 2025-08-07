@@ -9,15 +9,36 @@
 	}
 }
 
-.sm {
-	width: 20rem;
+.width {
+	&-sm {
+		width: 20rem;
+	}
+	&-md {
+		width: 25rem;
+	}
+	&-lg {
+		width: 30rem;
+	}
+	&-auto {
+		width: auto;
+	}
 }
-.md {
-	width: 25rem;
+
+.height {
+	&-sm {
+		height: 10rem;
+	}
+	&-md {
+		height: 15rem;
+	}
+	&-lg {
+		height: 20rem;
+	}
+	&-auto {
+		height: auto;
+	}
 }
-.lg {
-	width: 30rem;
-}
+
 .cardtitle {
 	width: 100%;
 	text-align: center;

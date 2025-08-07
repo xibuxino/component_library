@@ -133,9 +133,17 @@ function App() {
 			</div>
 			<div className='example-row'>
 				<Card
+					width='lg'
+					height='auto'
 					icon=<HiMiniCloud />
 					title='Easy Deployment'
 					text='Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.'
+				/>
+				<Card
+					width='sm'
+					height='md'
+					title='Easy Deployment'
+					text='Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis. Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis. '
 				/>
 			</div>
 		</>
