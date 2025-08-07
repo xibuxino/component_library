@@ -1,22 +1,22 @@
 import styles from './Banner.module.scss';
 import clsx from 'clsx';
 import {
-	successIcon,
-	warningIcon,
-	errorIcon,
-	neutralIcon,
-} from '/src/assets/icons/index.js';
+	SuccessIcon,
+	WarningIcon,
+	ErrorIcon,
+	InfoIcon,
+} from './icons/index.js';
 
 const iconMap = {
-	success: successIcon,
-	warning: warningIcon,
-	error: errorIcon,
-	neutral: neutralIcon,
+	success: <SuccessIcon />,
+	warning: <WarningIcon />,
+	error: <ErrorIcon />,
+	info: <InfoIcon />,
 };
-export const Banner = ({ children, status = 'neutral' }) => {
+export const Banner = ({ children, status = 'info' }) => {
 	return (
 		<div className={clsx(styles.banner, styles[status])}>
-			<img className='banner-icon' src={iconMap[status]} aria-hidden='true' />
+			{iconMap[status]}
 			{children}
 		</div>
 	);

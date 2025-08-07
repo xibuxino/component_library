@@ -2,6 +2,8 @@ import { useState } from 'react';
 import './App.css';
 import { Badge } from './components/badge/index.jsx';
 import { Banner } from './components/banner/index.jsx';
+import { Card } from './components/card/Card.jsx';
+import { HiMiniCloud } from 'react-icons/hi2';
 
 function App() {
 	return (
@@ -87,12 +89,17 @@ function App() {
 						</Banner.Description>
 					</Banner.Text>
 				</Banner>
-				<Banner status='neutral'>
+				<Banner status='info'>
 					<Banner.Text>
 						<Banner.Title>Update available</Banner.Title>
 						<Banner.Description>
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-							pariatur, ipsum similique veniam.
+							pariatur, ipsum similique veniam. Lorem ipsum dolor sit amet
+							consectetur adipisicing elit. Aliquid pariatur, ipsum similique
+							veniam. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Aliquid pariatur, ipsum similique veniam. Lorem ipsum dolor sit
+							amet consectetur adipisicing elit. Aliquid pariatur, ipsum
+							similique veniam.
 						</Banner.Description>
 					</Banner.Text>
 				</Banner>
@@ -113,11 +120,23 @@ function App() {
 						</Banner.Title>
 					</Banner.Text>
 				</Banner>
-				<Banner status='neutral'>
+				<Banner status='info'>
 					<Banner.Text>
 						<Banner.Title>Update available</Banner.Title>
 					</Banner.Text>
 				</Banner>
+				<Banner>
+					<Banner.Text>
+						<Banner.Title>not defined</Banner.Title>
+					</Banner.Text>
+				</Banner>
+			</div>
+			<div className='example-row'>
+				<Card
+					icon=<HiMiniCloud />
+					title='Easy Deployment'
+					text='Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.'
+				/>
 			</div>
 		</>
 	);
