@@ -5,6 +5,7 @@ import { Banner } from './components/banner/index.jsx';
 import { Card } from './components/card/Card.jsx';
 import { HiMiniCloud } from 'react-icons/hi2';
 import { Testimonial } from './components/testimonial/Testimonial.jsx';
+import { Toast } from './components/toast/Toast.jsx';
 
 function App() {
 	return (
@@ -96,6 +97,74 @@ function App() {
 					company='Workcation'
 					role='CTO'
 					logo='src/components/testimonial/img/Logo.png'
+				/>
+			</div>
+			<div className='example-row'>
+				<Toast
+					title='Test title'
+					text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue.'
+					variant='light'
+					color='purple'
+					size='sm'
+					tail='left'
+				/>
+				<Toast
+					title='Test title'
+					text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue.'
+					variant='light'
+					color='default'
+					size='md'
+					tail='right'
+				/>
+				<Toast
+					title='Test title'
+					text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue.'
+					variant='light'
+					color='blue'
+					size='lg'
+				/>
+				<Toast
+					title='Test title'
+					text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue.'
+					variant='light'
+					color='green'
+					size='lg'
+				/>
+				<Toast
+					title='Test title'
+					text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue.'
+					variant='bold'
+					color='purple'
+					size='lg'
+				/>
+				<Toast
+					title='Test title'
+					text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue.'
+					variant='bold'
+					color='default'
+					size='lg'
+					tail='center'
+				/>
+				<Toast
+					title='Test title'
+					text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue.'
+					variant='bold'
+					color='blue'
+					size='lg'
+					tail='right'
+				/>
+				<Toast
+					text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue.'
+					variant='bold'
+					color='green'
+					size='lg'
+					tail='none'
+				/>
+				<Toast
+					title='Ola'
+					text='to jest jakiś testowy tekst '
+					size='lg'
+					variant='light'
 				/>
 			</div>
 		</>

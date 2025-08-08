@@ -5,6 +5,14 @@
 	border-radius: 0.375rem;
 	padding: 1rem;
 	cursor: default;
+	p,
+	h3 {
+		margin: 0;
+		font-size: 1rem;
+	}
+	h3 {
+		font-weight: 500;
+	}
 }
 
 .bannertext {
@@ -14,14 +22,7 @@
 	padding-left: 1rem;
 	width: 100%;
 }
-p,
-h3 {
-	margin: 0;
-	font-size: 1rem;
-}
-h3 {
-	font-weight: 500;
-}
+
 .success {
 	background-color: #ecfdf5;
 	h3 {
