@@ -1,0 +1,98 @@
+.testimonial {
+	width: 100%;
+	max-width: 75rem;
+	padding-top: 6rem;
+	margin-top: 6rem;
+	border-radius: 0.5rem;
+	@media (min-width: 768px) {
+		padding-top: 0;
+		display: flex;
+		align-items: center;
+		height: 20rem;
+	}
+	&.light {
+		background-color: #ffffff;
+		color: #111827;
+		.quotation {
+			fill: #111827;
+		}
+	}
+	&.dark {
+		background-color: #2545b8;
+		color: #ffffff;
+		.quotation {
+			fill: #ffffff;
+		}
+	}
+}
+.fullcontent {
+	display: flex;
+	flex-direction: column;
+	width: auto;
+	margin-top: -12rem;
+	padding: 3rem 1rem;
+	gap: 2rem;
+	@media (min-width: 768px) {
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		margin-top: 0;
+		padding: 2rem 3rem;
+	}
+}
+.content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+	&.contentWithPhoto {
+		align-items: flex-start;
+	}
+}
+
+.photo {
+	height: 12rem;
+	border-radius: 0.5rem;
+	object-fit: cover;
+	object-position: top;
+	box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+	@media (min-width: 768px) {
+		width: 18rem;
+		height: 22rem;
+	}
+}
+.text {
+	padding-block: 1rem;
+	font-size: 1.125rem;
+}
+.textWithLogo::before {
+	content: '"';
+}
+.textWithLogo::after {
+	content: '"';
+}
+.name {
+	font-size: 0.75rem;
+	font-weight: 600;
+}
+
+.company {
+	font-size: 0.75rem;
+	&::after {
+		content: ', ';
+	}
+}
+
+.role {
+	font-size: 0.75rem;
+}
+
+.logo {
+	height: 1rem;
+}
+.quotation {
+	height: 1rem;
+	width: auto;
+	opacity: 0.25;
+}
