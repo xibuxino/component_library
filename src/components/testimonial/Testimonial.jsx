@@ -17,15 +17,20 @@ export const Testimonial = ({
 	company,
 	role,
 	logo,
-	theme,
+	theme = 'light',
 }) => {
 	return (
-		<div className={clsx(styles.testimonial, styles[theme])}>
-			<div className={styles.fullcontent}>
+		<div
+			className={clsx(
+				styles.testimonial,
+				styles[theme],
+				photo && styles.hasPhoto
+			)}>
+			<div className={clsx(styles.container, photo && styles.hasPhoto)}>
 				<TestimonialPhoto photo={photo} />
-				<TestimonialContent className={clsx(photo && styles.contentWithPhoto)}>
+				<TestimonialContent className={clsx(photo && styles.hasPhoto)}>
 					<TestimonialLogo logo={logo} />
-					<TestimonialText className={clsx(logo && styles.textWithLogo)}>
+					<TestimonialText className={clsx(logo && styles.hasLogo)}>
 						{text}
 					</TestimonialText>
 					<TestimonialName>{name}</TestimonialName>

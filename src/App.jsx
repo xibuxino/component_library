@@ -80,8 +80,17 @@ function App() {
 			</div>
 			<div className='example-column'>
 				<Testimonial
-					theme='light'
+					theme='dark'
 					photo='src/components/testimonial/img/woman_profile.jpg'
+					text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue. Amet feugiat est integer dolor auctor adipiscing nunc urna, sit.'
+					name='May Andersons'
+					company='Workcation'
+					role='CTO'
+					// logo='src/components/testimonial/img/Logo.png'
+				/>
+				<Testimonial
+					theme='light'
+					// photo='src/components/testimonial/img/woman_profile.jpg'
 					text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue. Amet feugiat est integer dolor auctor adipiscing nunc urna, sit.'
 					name='May Andersons'
 					company='Workcation'

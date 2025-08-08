@@ -1,14 +1,13 @@
 .testimonial {
 	width: 100%;
 	max-width: 75rem;
-	padding-top: 6rem;
-	margin-top: 6rem;
+	margin-top: 2rem;
 	border-radius: 0.5rem;
 	@media (min-width: 768px) {
-		padding-top: 0;
 		display: flex;
 		align-items: center;
 		height: 20rem;
+		padding: 6rem 8rem;
 	}
 	&.light {
 		background-color: #ffffff;
@@ -24,20 +23,13 @@
 			fill: #ffffff;
 		}
 	}
-}
-.fullcontent {
-	display: flex;
-	flex-direction: column;
-	width: auto;
-	margin-top: -12rem;
-	padding: 3rem 1rem;
-	gap: 2rem;
-	@media (min-width: 768px) {
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
-		margin-top: 0;
-		padding: 2rem 3rem;
+
+	&.hasPhoto {
+		padding-top: 6rem;
+		margin-top: 6rem;
+		@media (min-width: 768px) {
+			padding: 0;
+		}
 	}
 }
 .content {
@@ -46,11 +38,29 @@
 	justify-content: center;
 	align-items: center;
 	flex: 1;
-	&.contentWithPhoto {
+	text-align: center;
+	&.hasPhoto {
 		align-items: flex-start;
+		text-align: left;
 	}
 }
-
+.container {
+	display: flex;
+	flex-direction: column;
+	width: auto;
+	padding: 3rem 1rem;
+	gap: 2rem;
+	&.hasPhoto {
+		margin-top: -12rem;
+		@media (min-width: 768px) {
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			padding: 2rem 3rem;
+			margin-top: 0;
+		}
+	}
+}
 .photo {
 	height: 12rem;
 	border-radius: 0.5rem;
@@ -65,12 +75,12 @@
 .text {
 	padding-block: 1rem;
 	font-size: 1.125rem;
-}
-.textWithLogo::before {
-	content: '"';
-}
-.textWithLogo::after {
-	content: '"';
+	&.hasLogo {
+		&::before,
+		&::after {
+			content: '"';
+		}
+	}
 }
 .name {
 	font-size: 0.75rem;
@@ -87,7 +97,6 @@
 .role {
 	font-size: 0.75rem;
 }
-
 .logo {
 	height: 1rem;
 }
