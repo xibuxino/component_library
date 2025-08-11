@@ -1,4 +1,4 @@
-export const ToastCloseBtn = ({ className }) => {
+export const TooltipCloseBtn = ({ className }) => {
   return (
     <div className="ml-auto">
       <button

@@ -1,6 +1,6 @@
 import { cva } from "class-variance-authority";
 
-export const toastWrapper = cva("shadow-lg relative cursor-default", {
+export const tooltipWrapper = cva("shadow-lg relative cursor-default", {
   variants: {
     variant: ["bold", "light"],
     color: ["default", "blue", "purple", "green"],
@@ -59,7 +59,7 @@ export const toastWrapper = cva("shadow-lg relative cursor-default", {
   },
 });
 
-export const toastTitle = cva("col-start-2 font-medium col-end-3 row-1", {
+export const tooltipTitle = cva("col-start-2 font-medium col-end-3 row-1", {
   variants: {
     variant: ["bold", "light"],
     color: ["default", "blue", "purple", "green"],
@@ -117,7 +117,7 @@ export const toastTitle = cva("col-start-2 font-medium col-end-3 row-1", {
     size: "md",
   },
 });
-export const toastDescription = cva("col-start-2 col-end-3 row-2", {
+export const tooltipDescription = cva("col-start-2 col-end-3 row-2", {
   variants: {
     variant: ["bold", "light"],
     color: ["default", "blue", "purple", "green"],
@@ -176,7 +176,7 @@ export const toastDescription = cva("col-start-2 col-end-3 row-2", {
   },
 });
 
-export const toastIconColor = cva("opacity-75", {
+export const tooltipIconColor = cva("opacity-75", {
   variants: {
     variant: ["bold", "light"],
     color: ["default", "blue", "purple", "green"],
@@ -229,7 +229,7 @@ export const toastIconColor = cva("opacity-75", {
   },
 });
 
-export const toastTail = cva(
+export const tooltipTail = cva(
   "drop-shadow-[0px_5px_2px_rgba(0,0,0,0.075)] absolute",
   {
     variants: {
@@ -253,7 +253,7 @@ export const toastTail = cva(
   }
 );
 
-export const toastMainIcon = cva("w-[2em] mt-[0.15em]", {
+export const tooltipMainIcon = cva("w-[2em] mt-[0.15em]", {
   variants: {
     size: {
       sm: "text-sm",
@@ -267,7 +267,7 @@ export const toastMainIcon = cva("w-[2em] mt-[0.15em]", {
   },
 });
 
-export const toastCloseIcon = cva("w-[1em] mt-[0.3em] cursor-pointer", {
+export const tooltipCloseIcon = cva("w-[1em] mt-[0.3em] cursor-pointer", {
   variants: {
     size: {
       sm: "text-sm",
